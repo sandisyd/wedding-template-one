@@ -1,5 +1,8 @@
 <template>
   <div class="acara">
+    <div v-if="showAnimation" class="container-flower">
+      <span v-for="i in 20" :key="i" class="flower"> 🌸</span>
+    </div>
     <div class="row">
       <div class="col">
         <span class="acara-title">the wedding of</span>
@@ -9,7 +12,7 @@
               <path d="M0 6 L60 6" stroke="currentColor" stroke-width="3" />
             </svg>
           </div>
-          <div class="col-2" style="width: 4%">
+          <div class="col-2" style="width: 42px">
             <span
               ><img src="../../../assets/img/icon-park-solid_like.svg" alt="love" srcset=""
             /></span>
@@ -39,7 +42,7 @@
               <path d="M0 6 L60 6" stroke="currentColor" stroke-width="3" />
             </svg>
           </div>
-          <div class="col-2" style="width: 4%">
+          <div class="col-2" style="width: 42px">
             <span class="connect-sub">&</span>
           </div>
           <div class="col-3 ps-0" style="text-align: start">
@@ -55,7 +58,7 @@
               <path d="M0 6 L60 6" stroke="currentColor" stroke-width="3" />
             </svg>
           </div>
-          <div class="col-2" style="width: 4%">
+          <div class="col-2" style="width: 42px">
             <span
               ><img src="../../../assets/img/icon-park-solid_like.svg" alt="love" srcset=""
             /></span>
@@ -72,4 +75,22 @@
   </div>
 </template>
 
-<script></script>
+<script setup>
+import { onMounted, ref } from 'vue'
+
+const showAnimation = ref(true)
+
+onMounted(() => {
+  const flowers = document.querySelectorAll('.flower')
+
+  flowers.forEach((flower) => {
+    const randomLeft = Math.random() * 100
+    const randomDuration = 5 + Math.random() * 5
+    const randomDelay = Math.random() * 5
+
+    flower.style.left = `${randomLeft}` + 'vw'
+    flower.style.animationDuration = randomDuration + 's'
+    flower.style.animationDelay = randomDelay + 's'
+  })
+})
+</script>
