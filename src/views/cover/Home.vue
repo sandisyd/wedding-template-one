@@ -37,6 +37,7 @@
               background-color: rgba(255, 255, 255, 0.2);
               color: white;
             "
+            @click="router.push('/wedding')"
           >
             Buka Undangan
           </button>
@@ -46,4 +47,8 @@
   </div>
 </template>
 
-<script></script>
+<script setup>
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+</script>

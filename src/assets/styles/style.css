@@ -53,6 +53,57 @@ body {
 }
 
 .home .btn:hover {
-  background-color: whitesmoke !important;
-  color: black !important;
+  background-color: #a3b18a !important;
+}
+
+/* acara */
+.acara {
+  font-family: 'Work Sans', sans-serif;
+  background-color: #f8f8f8;
+  height: 850px;
+  text-align: center;
+  padding: 2rem 10px 0 10px;
+}
+
+.acara .acara-title {
+  font-family: 'Cormorant', serif;
+  font-size: 0.87rem;
+  color: #a3b18a;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.acara .acara-pembuka {
+  padding-bottom: 1rem;
+}
+
+.acara .acara-isi {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 486px;
+  text-align: center;
+}
+
+.acara .groom-one {
+  font-family: 'Allura', cursive;
+  font-size: 4rem;
+  color: black;
+  padding-bottom: 1rem;
+}
+
+.acara .connect-sub {
+  font-family: 'Allura', cursive;
+  font-size: 1rem;
+  color: #a3b18a;
+}
+
+.acara .bride-one {
+  font-family: 'Allura', cursive;
+  font-size: 4rem;
+  color: black;
+  padding-bottom: 1rem;
+}
+
+.acara .date-one {
+  font-size: 0.87rem;
 }
