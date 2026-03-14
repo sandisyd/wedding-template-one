@@ -6,15 +6,15 @@
           <p class="head-title">we are getting married</p>
           <h1>Ahmad</h1>
           <div class="row" style="justify-content: center; align-items: center">
-            <div class="col-md-3 ps-0">
+            <div class="col-3 ps-0">
               <svg width="60" height="12" viewBox="0 0 60 12" fill="none" class="text-white">
                 <path d="M0 6 L60 6" stroke="currentColor" stroke-width="3" />
               </svg>
             </div>
-            <div class="col-md-2">
+            <div class="col-2">
               <span class="connect">&</span>
             </div>
-            <div class="col-md-3 ps-0">
+            <div class="col-3 ps-0">
               <svg width="60" height="12" viewBox="0 0 60 12" fill="none" class="text-white">
                 <path
                   d="M0 6 L60 6"

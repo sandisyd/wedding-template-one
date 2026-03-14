@@ -51,3 +51,8 @@ body {
   font-size: 0.8rem;
   color: white;
 }
+
+.home .btn:hover {
+  background-color: whitesmoke !important;
+  color: black !important;
+}
