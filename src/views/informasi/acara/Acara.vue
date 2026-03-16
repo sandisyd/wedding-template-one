@@ -1,8 +1,8 @@
 <template>
+  <div v-if="showAnimation" class="container-flower">
+    <span v-for="i in 20" :key="i" class="flower"> 🌸</span>
+  </div>
   <div class="acara">
-    <div v-if="showAnimation" class="container-flower">
-      <span v-for="i in 20" :key="i" class="flower"> 🌸</span>
-    </div>
     <div class="row">
       <div class="col">
         <span class="acara-title">the wedding of</span>
@@ -73,10 +73,12 @@
       </div>
     </div>
   </div>
+  <Pengantin />
 </template>
 
 <script setup>
 import { onMounted, ref } from 'vue'
+import Pengantin from '../pengantin/Pengantin.vue'
 
 const showAnimation = ref(true)
 

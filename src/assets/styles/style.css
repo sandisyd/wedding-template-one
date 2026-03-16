@@ -124,6 +124,91 @@ body {
   font-size: 0.87rem;
 }
 
+/* pengantin */
+.pengantin {
+  background-color: #f5f5dc;
+  height: 950px;
+  padding: 72px 10px 0 10px;
+}
+
+.pengantin .pengantin-abstrak {
+  text-align: center;
+  color: #a3b18a;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.pengantin .title-pengantin {
+  font-family: 'Allura', cursive;
+  font-size: 4rem;
+  text-align: center;
+  text-transform: capitalize;
+  padding-top: 30px;
+}
+
+.pengantin .groom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pengantin .groom .groom-image .container {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  background-image: url(../img/groom-satu.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pengantin .groom .groom-name {
+  padding-top: 36px;
+}
+.pengantin .groom .groom-name h1 {
+  font-family: 'Allura', cursive;
+  color: black;
+  width: 350px;
+}
+
+.pengantin .groom .ig-groom .btn {
+  background-color: #a3b18a;
+  border-radius: 8px;
+  color: white;
+}
+.pengantin .bride {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pengantin .bride .bride-image .container {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  background-image: url(../img/bride-satu.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pengantin .bride .bride-name {
+  padding-top: 36px;
+}
+.pengantin .bride .bride-name h1 {
+  font-family: 'Allura', cursive;
+  color: black;
+  width: 350px;
+}
+
+.pengantin .bride .ig-bride .btn {
+  background-color: #a3b18a;
+  border-radius: 8px;
+  color: white;
+}
+
 /* animasi */
 .fade-enter-active,
 .fade-leave-active {
