@@ -3,10 +3,13 @@
     <span v-for="i in 20" :key="i" class="flower"> 🌸</span>
   </div>
   <div class="acara">
-    <div class="row">
+    <div class="row" style="margin: 0px">
       <div class="col">
         <span class="acara-title">the wedding of</span>
-        <div class="row pt-5 pb-5" style="justify-content: center; align-items: center">
+        <div
+          class="row pt-5 pb-5"
+          style="justify-content: center; align-items: center; margin-right: 0px"
+        >
           <div class="col-3 pe-0" style="text-align: end">
             <svg width="60" height="12" viewBox="0 0 60 12" fill="none" style="color: #a3b18a">
               <path d="M0 6 L60 6" stroke="currentColor" stroke-width="3" />
@@ -52,7 +55,10 @@
           </div>
         </div>
         <h1 class="bride-one">Sari</h1>
-        <div class="row pb-5" style="justify-content: center; align-items: center">
+        <div
+          class="row pb-5"
+          style="justify-content: center; align-items: center; margin-right: 0px"
+        >
           <div class="col-3 pe-0" style="text-align: end">
             <svg width="60" height="12" viewBox="0 0 60 12" fill="none" style="color: #a3b18a">
               <path d="M0 6 L60 6" stroke="currentColor" stroke-width="3" />

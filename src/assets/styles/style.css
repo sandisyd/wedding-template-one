@@ -127,7 +127,7 @@ body {
 /* pengantin */
 .pengantin {
   background-color: #f5f5dc;
-  height: 950px;
+  min-height: 110vh;
   padding: 72px 10px 0 10px;
 }
 
@@ -153,7 +153,7 @@ body {
   text-align: center;
 }
 
-.pengantin .groom .groom-image .container {
+.pengantin .groom .groom-image .image-box {
   width: 150px;
   height: 150px;
   border-radius: 10px;
@@ -184,7 +184,7 @@ body {
   text-align: center;
 }
 
-.pengantin .bride .bride-image .container {
+.pengantin .bride .bride-image .image-box {
   width: 150px;
   height: 150px;
   border-radius: 10px;
