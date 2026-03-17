@@ -6,7 +6,7 @@ body {
 }
 
 /* cover */
-.container-fluid {
+.cover {
   height: 100vh;
   background-image: url(../img/bg-wedding.png);
   background-size: cover;
@@ -207,6 +207,27 @@ body {
   background-color: #a3b18a;
   border-radius: 8px;
   color: white;
+}
+
+/* Jadwal Acara */
+.jacara {
+  background-color: #f8f8f8;
+  text-align: center;
+  align-items: center;
+  min-height: 110vh;
+}
+
+.jadwal-acara .jadwal-title {
+  text-transform: uppercase;
+  padding-top: 4.5rem;
+  color: #a3b18a;
+}
+
+.jadwal-acara h1 {
+  font-family: 'Allura', cursive;
+  font-size: 4rem;
+  color: black;
+  text-transform: capitalize;
 }
 
 /* animasi */

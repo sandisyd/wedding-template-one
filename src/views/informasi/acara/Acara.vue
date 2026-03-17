@@ -80,11 +80,13 @@
     </div>
   </div>
   <Pengantin />
+  <JadwalAcara />
 </template>
 
 <script setup>
 import { onMounted, ref } from 'vue'
 import Pengantin from '../pengantin/Pengantin.vue'
+import JadwalAcara from './Jadwal_Acara.vue'
 
 const showAnimation = ref(true)
 
