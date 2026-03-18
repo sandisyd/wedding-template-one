@@ -214,7 +214,7 @@ body {
   background-color: #f8f8f8;
   text-align: center;
   align-items: center;
-  min-height: 110vh;
+  min-height: 100vh;
 }
 
 .jadwal-acara .jadwal-title {
@@ -228,6 +228,70 @@ body {
   font-size: 4rem;
   color: black;
   text-transform: capitalize;
+}
+
+.jadwal-acara .card {
+  width: 320px;
+  height: 280px;
+  padding: 30px 65px 30px 50px;
+}
+
+.jadwal-acara .card .card-body {
+  padding: 0px;
+  text-align: left;
+}
+
+.jadwal-acara .card-title {
+  font-weight: 600;
+  text-align: center;
+}
+
+.jadwal-acara .tgl-akad img {
+  padding-right: 15px;
+}
+
+.jadwal-acara .tgl-akad span {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.jadwal-acara .waktu-akad,
+.jadwal-acara .lokasi-akad {
+  padding-top: 20px;
+}
+
+.jadwal-acara .waktu-akad img {
+  padding-right: 15px;
+}
+
+.jadwal-acara .waktu-akad span {
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.jadwal-acara .lokasi-akad img {
+  padding-right: 15px;
+}
+
+.jadwal-acara .lokasi-akad span {
+  font-size: 0.875rem;
+  color: black;
+}
+.jadwal-acara .lokasi-akad .addr {
+  padding-left: 34px;
+  width: 207px;
+  font-size: 0.75rem;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.jadwal-acara .card .btn {
+  background-color: #a3b18a;
+  color: white;
+  border-radius: 8px;
+  width: 95px;
+  font-size: 0.8rem;
+  margin-top: -10px;
 }
 
 /* animasi */

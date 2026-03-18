@@ -20,26 +20,50 @@
           </svg>
         </div>
       </div>
-      <div class="row">
+      <div class="row" style="display: inline-flex">
         <div class="col-lg-6">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Akad Nikah</h5>
+              <div class="tgl-akad">
+                <img src="../../../assets/icons/stash_calendar.svg" alt="calendar" />
+                <span>Minggu, 25 Agustus 2026</span>
+              </div>
+              <div class="waktu-akad">
+                <img src="../../../assets/icons/mingcute_time-line.svg" alt="time" />
+                <span>08.00 - 10.00 WIB</span>
+              </div>
+              <div class="lokasi-akad pb-4">
+                <img src="../../../assets/icons/boxicons_location-filled.svg" alt="location" />
+                <span>Masjid Al - Ikhlas</span><br />
+                <span class="addr">Jl. Raya Kebayoran No. 123, Jakarta Selatan</span>
+              </div>
+            </div>
+            <div class="text-center">
+              <a href="#" class="btn">View Map</a>
             </div>
           </div>
         </div>
         <div class="col-lg-6">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <h5 class="card-title">Resepsi</h5>
+              <div class="tgl-akad">
+                <img src="../../../assets/icons/stash_calendar.svg" alt="calendar" />
+                <span>Minggu, 25 Agustus 2026</span>
+              </div>
+              <div class="waktu-akad">
+                <img src="../../../assets/icons/mingcute_time-line.svg" alt="time" />
+                <span>08.00 - 10.00 WIB</span>
+              </div>
+              <div class="lokasi-akad pb-4">
+                <img src="../../../assets/icons/boxicons_location-filled.svg" alt="location" />
+                <span>Masjid Al - Ikhlas</span><br />
+                <span class="addr">Jl. Raya Kebayoran No. 123, Jakarta Selatan</span>
+              </div>
+            </div>
+            <div class="text-center">
+              <a href="#" class="btn">View Map</a>
             </div>
           </div>
         </div>
