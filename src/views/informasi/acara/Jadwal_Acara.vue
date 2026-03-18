@@ -20,8 +20,8 @@
           </svg>
         </div>
       </div>
-      <div class="row" style="display: inline-flex">
-        <div class="col-lg-6">
+      <div class="row">
+        <div class="col-lg-6 akad">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Akad Nikah</h5>
@@ -44,7 +44,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 resepsi">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Resepsi</h5>

@@ -214,7 +214,7 @@ body {
   background-color: #f8f8f8;
   text-align: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 95vh;
 }
 
 .jadwal-acara .jadwal-title {
@@ -230,10 +230,27 @@ body {
   text-transform: capitalize;
 }
 
+.jadwal-acara .akad {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-align: center;
+  padding-right: 5rem;
+}
+
+.jadwal-acara .resepsi {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: center;
+  padding-left: 5rem;
+}
+
 .jadwal-acara .card {
   width: 320px;
   height: 280px;
   padding: 30px 65px 30px 50px;
+  margin-bottom: 30px;
 }
 
 .jadwal-acara .card .card-body {
@@ -292,6 +309,45 @@ body {
   width: 95px;
   font-size: 0.8rem;
   margin-top: -10px;
+}
+
+/* love story */
+.love-story {
+  background-color: #f5f5dc;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.love-story .title-story {
+  text-transform: uppercase;
+  color: #a3b18a;
+  padding-top: 4.5rem;
+}
+
+.love-story h1 {
+  font-family: 'Allura', cursive;
+  font-size: 4rem;
+  color: black;
+  text-transform: capitalize;
+}
+
+/* media query */
+@media (max-width: 992px) {
+  .jadwal-acara .akad {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-right: 12px;
+  }
+
+  .jadwal-acara .resepsi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-left: 12px;
+  }
 }
 
 /* animasi */
