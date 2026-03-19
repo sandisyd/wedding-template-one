@@ -479,27 +479,11 @@ body {
   }
   .timeline li .timeline-panel .timeline-body {
     margin-left: 0 !important;
-    width: 290px !important;
+    width: 260px !important;
   }
 }
 
 @media (max-width: 576px) {
-  /* .timelie li .timeline-image {
-    width: 80px;
-    height: 80px;
-  }
-
-  .timeline li .timeline-panel {
-    width: 65%;
-    transform: translateX(-20px);
-  }
-
-  .timeline li .timeline-panel::before {
-    top: 30px;
-  }
-  .timeline li .timeline-panel::after {
-    top: 31px;
-  } */
   .timeline::before {
     left: 100px !important;
   }
