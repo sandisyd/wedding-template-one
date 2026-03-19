@@ -331,6 +331,115 @@ body {
   text-transform: capitalize;
 }
 
+.love-story .timeline {
+  list-style: none;
+  padding: 1.4rem 0;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.love-story .timeline::before {
+  content: '';
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: #ccc;
+  width: 1px;
+  left: 50%;
+}
+
+.love-story .timeline li {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.love-story .timeline li::before,
+.love-story .timeline li::after {
+  content: '';
+  display: table;
+}
+
+.love-story .timeline li::after {
+  clear: both;
+}
+
+.love-story .timeline li .timeline-image {
+  width: 33px;
+  height: 33px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../icons/icon-park-solid_like.svg);
+  border: 1px solid #a3b18a;
+}
+
+.love-story .timeline li .timeline-panel {
+  width: 46%;
+  float: left;
+  position: relative;
+  padding: 1rem 0 0 0;
+  border-radius: 8px;
+}
+.love-story .timeline li .timeline-panel span {
+  color: #a3b18a;
+  font-size: 0.9rem;
+}
+.love-story .timeline li .timeline-panel h3 {
+  font-size: 1.1rem;
+  color: black;
+}
+
+.love-story .timeline li .timeline-body p {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* .love-story .timeline li .timeline-panel::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  top: 80px;
+  right: -15px;
+}
+
+.love-story .timeline li .timeline-panel::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 15px solid transparent;
+  top: 81px;
+  right: -13px;
+} */
+
+.love-story .timeline li.timeline-left .timeline-panel {
+  text-align: right;
+}
+
+.love-story .timeline li.timeline-left .timeline-body {
+  width: 385px;
+  margin-left: 41%;
+}
+
+.love-story .timeline li.timeline-right .timeline-panel {
+  float: right;
+  text-align: left;
+}
+.love-story .timeline li.timeline-right .timeline-body {
+  width: 385px;
+  margin-right: 41%;
+}
+
 /* media query */
 @media (max-width: 992px) {
   .jadwal-acara .akad {
