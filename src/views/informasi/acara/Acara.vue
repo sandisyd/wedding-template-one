@@ -1,8 +1,8 @@
 <template>
-  <div v-if="showAnimation" class="container-flower">
-    <span v-for="i in 20" :key="i" class="flower"> 🌸</span>
-  </div>
   <div class="acara">
+    <!-- <div v-if="showAnimation" class="container-flower">
+      <span v-for="i in 20" :key="i" class="flower"> 🌸</span>
+    </div> -->
     <div class="row" style="margin: 0px">
       <div class="col">
         <span class="acara-title">the wedding of</span>
@@ -90,19 +90,19 @@ import Pengantin from '../pengantin/Pengantin.vue'
 import JadwalAcara from './Jadwal_Acara.vue'
 import LoveStory from '../story/LoveStory.vue'
 
-const showAnimation = ref(true)
+// const showAnimation = ref(true)
 
-onMounted(() => {
-  const flowers = document.querySelectorAll('.flower')
+// onMounted(() => {
+//   const flowers = document.querySelectorAll('.flower')
 
-  flowers.forEach((flower) => {
-    const randomLeft = Math.random() * 100
-    const randomDuration = 5 + Math.random() * 5
-    const randomDelay = Math.random() * 5
+//   flowers.forEach((flower) => {
+//     const randomLeft = Math.random() * 100
+//     const randomDuration = 5 + Math.random() * 5
+//     const randomDelay = Math.random() * 5
 
-    flower.style.left = `${randomLeft}` + 'vw'
-    flower.style.animationDuration = randomDuration + 's'
-    flower.style.animationDelay = randomDelay + 's'
-  })
-})
+//     flower.style.left = `${randomLeft}` + 'vw'
+//     flower.style.animationDuration = randomDuration + 's'
+//     flower.style.animationDelay = randomDelay + 's'
+//   })
+// })
 </script>
