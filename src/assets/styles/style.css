@@ -1,7 +1,6 @@
 html,
 body {
   font-family: 'work sans', sans-serif;
-  background-color: white;
   width: 100%;
   overflow-x: hidden;
 }
@@ -9,7 +8,7 @@ body {
 /* cover */
 .cover {
   min-height: 100vh;
-  background-image: url(../img/bg-wedding.png);
+  background-image: url(../img/hero-couple.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -17,7 +16,6 @@ body {
 .home {
   background-color: rgba(0, 0, 0, 0.367);
   min-height: 100vh;
-  min-width: 100%;
   text-align: center;
   align-items: center;
   display: flex;
