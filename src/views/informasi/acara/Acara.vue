@@ -7,7 +7,7 @@
       <div class="col">
         <span class="acara-title">the wedding of</span>
         <div
-          class="row pt-5 pb-5"
+          class="row pb-5 pt-5"
           style="justify-content: center; align-items: center; margin-right: 0px"
         >
           <div class="col-3 pe-0" style="text-align: end">

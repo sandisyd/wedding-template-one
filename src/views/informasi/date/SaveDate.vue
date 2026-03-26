@@ -32,30 +32,30 @@
               <span class="sub-date">Minggu, 25 Agustus 2026</span>
             </div>
           </div>
-          <div class="row" style="justify-content: center; align-items: baseline">
-            <div class="col-2" style="width: 7%; padding: 0">
-              <div class="box-hari"><p>120</p></div>
+          <div class="row countdown" style="justify-content: center; align-items: baseline">
+            <div class="col-2 hari-col">
+              <div class="box-hari"><p id="days"></p></div>
               <div class="sub-hari">Hari</div>
             </div>
-            <div class="col-1" style="width: 3%">
+            <div class="col-1 separator-col">
               <span style="font-size: 2rem; font-weight: 600">:</span>
             </div>
-            <div class="col-2" style="width: 7%; padding: 0">
-              <div class="box-jam"><p>10</p></div>
+            <div class="col-2 jam-col">
+              <div class="box-jam"><p id="hours"></p></div>
               <div class="sub-jam">Jam</div>
             </div>
-            <div class="col-1" style="width: 3%">
+            <div class="col-1 separator-col">
               <span style="font-size: 2rem; font-weight: 600">:</span>
             </div>
-            <div class="col-2" style="width: 7%; padding: 0">
-              <div class="box-menit"><p>20</p></div>
+            <div class="col-2 menit-col">
+              <div class="box-menit"><p id="minutes"></p></div>
               <div class="sub-menit">Menit</div>
             </div>
-            <div class="col-1" style="width: 3%">
+            <div class="col-1 separator-col">
               <span style="font-size: 2rem; font-weight: 600">:</span>
             </div>
-            <div class="col-2" style="width: 7%; padding: 0">
-              <div class="box-detik"><p>10</p></div>
+            <div class="col-2 detik-col">
+              <div class="box-detik"><p id="seconds"></p></div>
               <div class="sub-detik">Detik</div>
             </div>
           </div>
@@ -64,3 +64,33 @@
     </div>
   </div>
 </template>
+
+<script>
+// manual javascript
+const targetDate = new Date('2026-08-25T00:00:00').getTime()
+
+function updateTime() {
+  const now = new Date().getTime()
+
+  const distanceTarget = targetDate - now
+
+  if (distanceTarget <= 0) {
+    document.querySelector('.countdown').innerHTML = 'Acara Dimulai'
+    return
+  }
+
+  const days = Math.floor(distanceTarget / (1000 * 60 * 60 * 24))
+  const hours = Math.floor((distanceTarget / (1000 * 60 * 60)) % 24)
+  const minutes = Math.floor((distanceTarget / (1000 * 60)) % 60)
+  const seconds = Math.floor((distanceTarget / 1000) % 60)
+
+  document.getElementById('days').innerText = days
+  document.getElementById('hours').innerText = hours
+  document.getElementById('minutes').innerText = minutes
+  document.getElementById('seconds').innerText = seconds
+
+  // update setiap detik
+}
+setInterval(updateTime, 1000)
+updateTime()
+</script>
