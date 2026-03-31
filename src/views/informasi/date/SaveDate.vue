@@ -32,40 +32,41 @@
               <span class="sub-date">Minggu, 25 Agustus 2026</span>
             </div>
           </div>
-          <div class="row countdown" style="justify-content: center; align-items: baseline">
-            <div class="col-2 hari-col">
-              <div class="box-hari">
-                <p id="days">{{ days }}</p>
-              </div>
-              <div class="sub-hari">Hari</div>
+          <div class="countdown" style="justify-content: center; align-items: baseline">
+            <div class="item-col">
+              <div class="box-daily">{{ days }}</div>
+              <div class="sub-daily">Hari</div>
             </div>
-            <div class="col-1 separator-col">
+            <div class="separator-col">
               <span style="font-size: 2rem; font-weight: 600">:</span>
             </div>
-            <div class="col-2 jam-col">
-              <div class="box-jam">
-                <p id="hours">{{ hours }}</p>
-              </div>
-              <div class="sub-jam">Jam</div>
+            <div class="item-col">
+              <div class="box-daily">{{ hours }}</div>
+              <div class="sub-daily">Jam</div>
             </div>
-            <div class="col-1 separator-col">
+            <div class="separator-col">
               <span style="font-size: 2rem; font-weight: 600">:</span>
             </div>
-            <div class="col-2 menit-col">
-              <div class="box-menit">
-                <p id="minutes">{{ minutes }}</p>
+            <div class="item-col">
+              <div class="box-daily">
+                {{ minutes }}
               </div>
-              <div class="sub-menit">Menit</div>
+              <div class="sub-daily">Menit</div>
             </div>
-            <div class="col-1 separator-col">
+            <div class="separator-col">
               <span style="font-size: 2rem; font-weight: 600">:</span>
             </div>
-            <div class="col-2 detik-col">
-              <div class="box-detik">
-                <p id="seconds">{{ seconds }}</p>
+            <div class="item-col">
+              <div class="box-daily">
+                {{ seconds }}
               </div>
-              <div class="sub-detik">Detik</div>
+              <div class="sub-daily">Detik</div>
             </div>
+          </div>
+          <div class="btn-save mt-5">
+            <button class="btn" style="background-color: #a3b18a; color: white">
+              Add to Calendar
+            </button>
           </div>
         </div>
       </div>
@@ -75,33 +76,6 @@
 
 <script setup>
 import { onMounted, ref } from 'vue'
-
-// manual javascript
-// const targetDate = new Date('2026-08-25T00:00:00').getTime()
-
-// function updateTime() {
-//   const now = new Date().getTime()
-
-//   const distanceTarget = targetDate - now
-
-//   if (distanceTarget <= 0) {
-//     document.querySelector('.countdown').innerHTML = 'Acara Dimulai'
-//     return
-//   }
-
-//   const days = Math.floor(distanceTarget / (1000 * 60 * 60 * 24))
-//   const hours = Math.floor((distanceTarget / (1000 * 60 * 60)) % 24)
-//   const minutes = Math.floor((distanceTarget / (1000 * 60)) % 60)
-//   const seconds = Math.floor((distanceTarget / 1000) % 60)
-
-//   document.getElementById('days').innerText = days
-//   document.getElementById('hours').innerText = hours
-//   document.getElementById('minutes').innerText = minutes
-//   document.getElementById('seconds').innerText = seconds
-
-// }
-// setInterval(updateTime, 1000)
-// updateTime()
 
 const days = ref(0)
 const hours = ref(0)
@@ -115,13 +89,12 @@ onMounted(() => {
     const now = new Date().getTime()
 
     const distance = targetDate - now
-
-    console.log('Cek distance ', distance)
+    const format = (n) => String(n).padStart(2, '0')
 
     days.value = Math.floor(distance / (1000 * 60 * 60 * 24))
-    hours.value = Math.floor((distance / (1000 * 60 * 60)) % 24)
-    minutes.value = Math.floor((distance / (1000 * 60)) % 60)
-    seconds.value = Math.floor((distance / 1000) % 60)
+    hours.value = format(Math.floor((distance / (1000 * 60 * 60)) % 24))
+    minutes.value = format(Math.floor((distance / (1000 * 60)) % 60))
+    seconds.value = format(Math.floor((distance / 1000) % 60))
   }, 1000)
 })
 </script>

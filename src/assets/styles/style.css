@@ -465,16 +465,55 @@ body {
   color: rgba(0, 0, 0, 0.5);
   font-size: 0.8rem;
 }
-.save-date .hari-col,
+
+.save-date .countdown {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.save-date .item-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.save-date .item-col .box-daily {
+  width: clamp(50px, 10vw, 90px);
+  height: clamp(50px, 10vw, 83px);
+  border: 1px solid #a3b18a;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(1.2rem, 4vw, 2rem);
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.save-date .item-col .sub-daily {
+  margin-top: 10px;
+  font-size: clamp(0.8rem, 2.5vw, 1.25rem);
+}
+
+.save-date .separator-col {
+  font-size: clamp(1.2rem, 4vw, 2rem);
+  font-weight: 600;
+  /* align-self: center; */
+}
+/* .save-date .hari-col,
 .save-date .jam-col,
 .save-date .menit-col,
 .save-date .detik-col {
   width: 7%;
   padding: 0;
-}
-
-.save-date .separator-col {
-  width: 3%;
 }
 
 .save-date .box-hari {
@@ -486,6 +525,7 @@ body {
   box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .save-date .box-hari p {
@@ -508,6 +548,7 @@ body {
   box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .save-date .box-jam p {
@@ -530,6 +571,7 @@ body {
   box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .save-date .box-menit p {
@@ -552,6 +594,7 @@ body {
   box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .save-date .box-detik p {
@@ -564,9 +607,19 @@ body {
   width: 90px;
   padding-top: 18px;
   font-size: 1.25rem;
-}
+} */
 
 /* media query */
+@media (max-width: 1200px) {
+  .save-date .hari-col,
+  .save-date .jam-col,
+  .save-date .menit-col,
+  .save-date .detik-col {
+    width: 7%;
+    padding: 0;
+  }
+}
+
 @media (max-width: 992px) {
   .jadwal-acara .akad {
     display: flex;
@@ -627,109 +680,6 @@ body {
   }
   .timeline li .timeline-panel .timeline-body {
     margin-left: 0 !important;
-  }
-
-  .save-date .hari-col,
-  .save-date .jam-col,
-  .save-date .menit-col,
-  .save-date .detik-col {
-    width: 16%;
-    padding: 0;
-  }
-
-  .save-date .separator-col {
-    width: 8%;
-  }
-  .save-date .box-hari {
-    height: 60px;
-    width: 60px;
-    border: 1px solid #a3b18a;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
-    display: flex;
-    align-items: center;
-  }
-
-  .save-date .box-hari p {
-    font-size: 1.7rem;
-    font-weight: 600;
-    margin: 22px 10px 22px 6px;
-  }
-
-  .save-date .sub-hari {
-    width: 59px;
-    padding-top: 18px;
-    font-size: 1.25rem;
-  }
-
-  .save-date .box-jam {
-    height: 60px;
-    width: 60px;
-    border: 1px solid #a3b18a;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
-    display: flex;
-    align-items: center;
-  }
-
-  .save-date .box-jam p {
-    font-size: 1.7rem;
-    font-weight: 600;
-    margin: 22px 18px 22px 15px;
-  }
-
-  .save-date .sub-jam {
-    width: 55px;
-    padding-top: 18px;
-    font-size: 1.25rem;
-  }
-
-  .save-date .box-menit {
-    height: 60px;
-    width: 60px;
-    border: 1px solid #a3b18a;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
-    display: flex;
-    align-items: center;
-  }
-
-  .save-date .box-menit p {
-    font-size: 1.7rem;
-    font-weight: 600;
-    margin: 22px 18px 22px 10px;
-  }
-
-  .save-date .sub-menit {
-    width: 59px;
-    padding-top: 18px;
-    font-size: 1.25rem;
-  }
-
-  .save-date .box-detik {
-    height: 60px;
-    width: 60px;
-    border: 1px solid #a3b18a;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
-    display: flex;
-    align-items: center;
-  }
-
-  .save-date .box-detik p {
-    font-size: 1.7rem;
-    font-weight: 600;
-    margin: 22px 18px 22px 14px;
-  }
-
-  .save-date .sub-detik {
-    width: 59px;
-    padding-top: 18px;
-    font-size: 1.25rem;
   }
 }
 
