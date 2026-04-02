@@ -508,107 +508,26 @@ body {
   font-weight: 600;
   /* align-self: center; */
 }
-/* .save-date .hari-col,
-.save-date .jam-col,
-.save-date .menit-col,
-.save-date .detik-col {
-  width: 7%;
-  padding: 0;
+
+/* gallery */
+.gallery {
+  background-color: #f5f5dc;
+  min-height: 100vh;
+  padding-top: 72px;
+}
+.gallery .title-moments {
+  text-transform: uppercase;
+  color: #a3b18a;
+  padding-bottom: 30px;
+  font-size: 1rem;
 }
 
-.save-date .box-hari {
-  height: 83px;
-  width: 90px;
-  border: 1px solid #a3b18a;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.gallery .title-foto {
+  font-family: 'Allura', cursive;
+  font-size: 4rem;
+  color: black;
+  text-transform: capitalize;
 }
-
-.save-date .box-hari p {
-  font-size: 2rem;
-  font-weight: 600;
-  margin: 22px 18px 22px 19px;
-}
-
-.save-date .sub-hari {
-  width: 90px;
-  padding-top: 18px;
-  font-size: 1.25rem;
-}
-.save-date .box-jam {
-  height: 83px;
-  width: 90px;
-  border: 1px solid #a3b18a;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.save-date .box-jam p {
-  font-size: 2rem;
-  font-weight: 600;
-  margin: 22px 18px 22px 19px;
-}
-
-.save-date .sub-jam {
-  width: 90px;
-  padding-top: 18px;
-  font-size: 1.25rem;
-}
-.save-date .box-menit {
-  height: 83px;
-  width: 90px;
-  border: 1px solid #a3b18a;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.save-date .box-menit p {
-  font-size: 2rem;
-  font-weight: 600;
-  margin: 22px 18px 22px 19px;
-}
-
-.save-date .sub-menit {
-  width: 90px;
-  padding-top: 18px;
-  font-size: 1.25rem;
-}
-.save-date .box-detik {
-  height: 83px;
-  width: 90px;
-  border: 1px solid #a3b18a;
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.25);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.save-date .box-detik p {
-  font-size: 2rem;
-  font-weight: 600;
-  margin: 22px 18px 22px 19px;
-}
-
-.save-date .sub-detik {
-  width: 90px;
-  padding-top: 18px;
-  font-size: 1.25rem;
-} */
-
 /* media query */
 @media (max-width: 1200px) {
   .save-date .hari-col,

@@ -83,6 +83,7 @@
   <JadwalAcara />
   <LoveStory />
   <SaveDate />
+  <Gallery />
 </template>
 
 <script setup>
@@ -91,6 +92,7 @@ import Pengantin from '../pengantin/Pengantin.vue'
 import JadwalAcara from './Jadwal_Acara.vue'
 import LoveStory from '../story/LoveStory.vue'
 import SaveDate from '../date/SaveDate.vue'
+import Gallery from '../gallery/Gallery.vue'
 
 const showAnimation = ref(true)
 
