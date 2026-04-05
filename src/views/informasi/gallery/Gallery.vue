@@ -28,11 +28,11 @@
             </div>
           </div>
           <div class="all-images" style="justify-content: center; align-items: flex-start">
-            <div class="box-satu"></div>
-            <div class="box-dua"></div>
-            <div class="box-tiga"></div>
-            <div class="box-empat"></div>
-            <div class="box-lima"></div>
+            <div class="box-satu"><div class="box-depan"></div></div>
+            <div class="box-dua"><div class="box-depan"></div></div>
+            <div class="box-tiga"><div class="box-depan"></div></div>
+            <div class="box-empat"><div class="box-depan"></div></div>
+            <div class="box-lima"><div class="box-depan"></div></div>
           </div>
         </div>
       </div>
