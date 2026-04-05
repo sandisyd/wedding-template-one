@@ -512,7 +512,7 @@ body {
 /* gallery */
 .gallery {
   background-color: #f5f5dc;
-  min-height: 100vh;
+  min-height: 120vh;
   padding-top: 72px;
 }
 .gallery .title-moments {
@@ -530,12 +530,54 @@ body {
 }
 
 .gallery .all-images {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 448px 240px 240px;
+  /* grid-template-rows: 220px 220px; */
   gap: 20px;
+  grid-template-areas: 'big small1 small2' 'big small3 small4';
+  padding-left: 136px;
+  padding-right: 136px;
 }
 
+.gallery .all-images div {
+  border-radius: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .gallery .all-images .box-satu {
+  grid-area: big;
+  height: 474px;
+  width: 450px;
+  background-image: url(../img/gallery/gambar-1.png);
+}
+
+.gallery .all-images .box-dua {
+  grid-area: small1;
+  height: 224px;
+  width: 240px;
+  background-image: url(../img/gallery/gambar-2.png);
+}
+.gallery .all-images .box-tiga {
+  grid-area: small2;
+  height: 224px;
+  width: 240px;
+  background-image: url(../img/gallery/gambar-3.png);
+}
+.gallery .all-images .box-empat {
+  grid-area: small3;
+  height: 224px;
+  width: 240px;
+  background-image: url(../img/gallery/gambar-4.png);
+}
+.gallery .all-images .box-lima {
+  grid-area: small4;
+  height: 224px;
+  width: 240px;
+  background-image: url(../img/gallery/gambar-5.png);
+}
+
+/* .gallery .all-images .box-satu {
   height: 474px;
   width: 450px;
   border-radius: 20px;
@@ -583,7 +625,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../img/gallery/gambar-5.png);
-}
+} */
 /* media query */
 @media (max-width: 1200px) {
   .save-date .hari-col,
