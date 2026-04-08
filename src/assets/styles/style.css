@@ -398,30 +398,6 @@ body {
   font-weight: 400;
 }
 
-/* .love-story .timeline li .timeline-panel::before {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  border-top: 15px solid transparent;
-  border-left: 15px solid #ccc;
-  border-right: 0 solid #ccc;
-  border-bottom: 15px solid transparent;
-  top: 80px;
-  right: -15px;
-}
-
-.love-story .timeline li .timeline-panel::after {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  border-top: 15px solid transparent;
-  border-left: 15px solid #fff;
-  border-right: 0 solid #fff;
-  border-bottom: 15px solid transparent;
-  top: 81px;
-  right: -13px;
-} */
-
 .love-story .timeline li.timeline-left .timeline-panel {
   text-align: right;
 }
@@ -599,55 +575,65 @@ body {
   transition: all 0.3s ease;
 }
 
-/* .gallery .all-images .box-satu {
-  height: 474px;
-  width: 450px;
-  border-radius: 20px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../img/gallery/gambar-1.png);
+/* reservation */
+.reservation {
+  background-color: #f8f8f8;
+  min-height: 110vh;
+  padding-top: 72px;
+}
+.reservation .title-reserv {
+  text-transform: uppercase;
+  color: #a3b18a;
+  padding-bottom: 30px;
+  font-size: 1rem;
 }
 
-.gallery .all-images .box-dua {
-  height: 224px;
-  width: 240px;
-  border-radius: 20px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../img/gallery/gambar-2.png);
+.reservation .confirm-title {
+  font-family: 'Allura', cursive;
+  font-size: 4rem;
+  color: black;
+  text-transform: capitalize;
 }
 
-.gallery .all-images .box-tiga {
-  height: 224px;
-  width: 240px;
-  border-radius: 20px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../img/gallery/gambar-3.png);
+.reservation .option-hadir,
+.reservation .option-tidak,
+.reservation .option-ragu {
+  border: 1px solid #a3b18a;
+  margin: 12px;
+  background-color: white;
+  border-radius: 10px;
+  height: 50px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.reservation .option-hadir a,
+.reservation .option-tidak a,
+.reservation .option-ragu a {
+  color: black;
+  text-decoration: none;
+}
+.reservation .option-hadir:hover,
+.reservation .option-tidak:hover,
+.reservation .option-ragu:hover {
+  margin: 12px;
+  background-color: #a3b18a;
+  border-radius: 10px;
+  height: 50px;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+.reservation .option-hadir:hover a,
+.reservation .option-tidak:hover a,
+.reservation .option-ragu:hover a {
+  color: white;
+  text-decoration: none;
 }
 
-.gallery .all-images .box-empat {
-  height: 224px;
-  width: 240px;
-  border-radius: 20px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../img/gallery/gambar-4.png);
-}
-
-.gallery .all-images .box-lima {
-  height: 224px;
-  width: 240px;
-  border-radius: 20px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(../img/gallery/gambar-5.png);
-} */
 /* media query */
 @media (max-width: 1200px) {
   .save-date .hari-col,
