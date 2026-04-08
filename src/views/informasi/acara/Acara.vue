@@ -85,6 +85,7 @@
   <SaveDate />
   <Gallery />
   <Reservation />
+  <Gift />
 </template>
 
 <script setup>
@@ -95,6 +96,7 @@ import LoveStory from '../story/LoveStory.vue'
 import SaveDate from '../date/SaveDate.vue'
 import Gallery from '../gallery/Gallery.vue'
 import Reservation from '../reserv/Reservation.vue'
+import Gift from '@/views/informasi/gift/Gift.vue'
 
 const showAnimation = ref(true)
 

@@ -28,7 +28,7 @@
             </div>
           </div>
           <div class="row" style="justify-content: center">
-            <p style="width: 470px">
+            <p style="width: 470px; color: rgba(0, 0, 0, 0.5)">
               Merupakan suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk
               memberikan doa restu kepada kedua mempelai.
             </p>
@@ -91,7 +91,11 @@
                   style="border: 1px solid #a3b18a; padding: 12px"
                 ></textarea>
               </div>
-              <button type="submit" class="btn" style="background-color: #a3b18a; color: white">
+              <button
+                type="submit"
+                class="btn mb-5"
+                style="background-color: #a3b18a; color: white"
+              >
                 Kirim Konfirmasi
               </button>
             </form>
