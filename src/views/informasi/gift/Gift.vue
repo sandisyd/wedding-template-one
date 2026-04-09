@@ -27,11 +27,16 @@
               </svg>
             </div>
           </div>
-          <div class="row" style="justify-content: center">
+          <div class="row mb-3" style="justify-content: center">
             <p style="width: 470px; color: rgba(0, 0, 0, 0.5)">
               Doa restu Anda merupakan karunia yang sangat berarti bagi kami. Namun jika Anda ingin
               memberikan tanda kasih, kami menyediakan informasi berikut.
             </p>
+          </div>
+          <div class="row" style="justify-content: center">
+            <div class="box-gift">
+              <span><img src="../../../assets/img/gift-outline.svg" alt="gift" srcset="" /></span>
+            </div>
           </div>
         </div>
       </div>
