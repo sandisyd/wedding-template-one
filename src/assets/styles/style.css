@@ -665,6 +665,12 @@ body {
   padding-top: 15px;
 }
 
+.gift .rek-satu .card,
+.gift .rek-dua .card {
+  width: 440px;
+  height: 150px;
+}
+
 /* media query */
 @media (max-width: 1200px) {
   .save-date .hari-col,

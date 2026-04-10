@@ -33,9 +33,23 @@
               memberikan tanda kasih, kami menyediakan informasi berikut.
             </p>
           </div>
-          <div class="row" style="justify-content: center">
+          <div class="row mb-5" style="justify-content: center">
             <div class="box-gift">
               <span><img src="../../../assets/img/gift-outline.svg" alt="gift" srcset="" /></span>
+            </div>
+          </div>
+          <div class="row rek-satu mb-4" style="justify-content: center">
+            <div class="col-auto">
+              <div class="card">
+                <div class="card-body"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row rek-dua" style="justify-content: center">
+            <div class="col-auto">
+              <div class="card">
+                <div class="card-body"></div>
+              </div>
             </div>
           </div>
         </div>
