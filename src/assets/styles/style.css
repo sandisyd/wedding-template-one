@@ -660,9 +660,26 @@ body {
   border-radius: 10px;
   background-color: #c4c4c47a;
 }
+.gift .box-card {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #c4c4c47a;
+}
+.gift .box-copy {
+  width: 80px;
+  height: 28px;
+  border-radius: 6px;
+  background-color: #c4c4c47a;
+  text-align: center;
+}
 
 .gift .box-gift span img {
   padding-top: 15px;
+}
+
+.gift .box-card span img {
+  padding-top: 12px;
 }
 
 .gift .rek-satu .card,

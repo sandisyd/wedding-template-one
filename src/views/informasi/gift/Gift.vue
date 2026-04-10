@@ -41,7 +41,41 @@
           <div class="row rek-satu mb-4" style="justify-content: center">
             <div class="col-auto">
               <div class="card">
-                <div class="card-body"></div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-2">
+                      <div class="box-card">
+                        <span
+                          ><img
+                            src="../../../assets/img/famicons_card.svg"
+                            alt="gift"
+                            srcset=""
+                            style="height: 40px"
+                        /></span>
+                      </div>
+                    </div>
+                    <div class="col-10" style="text-align: start">
+                      <p class="title-rek">BCA</p>
+                      <p class="title-rek">a.n. Ahmad Rizky Pratama</p>
+                      <div class="row">
+                        <div class="col-auto">
+                          <p>1234567890</p>
+                        </div>
+                        <div class="col-auto">
+                          <div class="box-copy">
+                            <img
+                              src="../../../assets/img/boxicons_copy.svg"
+                              alt="copy"
+                              srcset=""
+                              style="height: 18px"
+                            />
+                            <span class="ps-2">Salin</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
