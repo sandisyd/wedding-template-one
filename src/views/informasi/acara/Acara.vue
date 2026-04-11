@@ -86,6 +86,8 @@
   <Gallery />
   <Reservation />
   <Gift />
+  <Closing />
+  <Footer />
 </template>
 
 <script setup>
@@ -97,6 +99,8 @@ import SaveDate from '../date/SaveDate.vue'
 import Gallery from '../gallery/Gallery.vue'
 import Reservation from '../reserv/Reservation.vue'
 import Gift from '@/views/informasi/gift/Gift.vue'
+import Closing from '../closing/Closing.vue'
+import Footer from '../footer/Footer.vue'
 
 const showAnimation = ref(true)
 

@@ -724,6 +724,27 @@ body {
   font-size: 1.3rem;
 }
 
+/* closing */
+.closing {
+  background-color: #f8f8f8;
+  min-height: 50vh;
+  padding-top: 72px;
+}
+
+.closing .closing-pengantin {
+  font-family: 'Allura', cursive;
+  font-size: 4rem;
+  color: black;
+  text-transform: capitalize;
+}
+
+/* footer */
+.footer {
+  background-color: #a3b18a;
+  min-height: 30vh;
+  padding-top: 72px;
+}
+
 /* media query */
 @media (max-width: 1200px) {
   .save-date .hari-col,
