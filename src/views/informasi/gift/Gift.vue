@@ -56,10 +56,10 @@
                     </div>
                     <div class="col-10" style="text-align: start">
                       <p class="title-rek">BCA</p>
-                      <p class="title-rek">a.n. Ahmad Rizky Pratama</p>
+                      <p class="name-rek">a.n. Ahmad Rizky Pratama</p>
                       <div class="row">
                         <div class="col-auto">
-                          <p>1234567890</p>
+                          <p class="no-rek">1234567890</p>
                         </div>
                         <div class="col-auto">
                           <div class="box-copy">
@@ -79,10 +79,62 @@
               </div>
             </div>
           </div>
-          <div class="row rek-dua" style="justify-content: center">
+          <div class="row rek-dua mb-3" style="justify-content: center">
             <div class="col-auto">
               <div class="card">
-                <div class="card-body"></div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-2">
+                      <div class="box-card">
+                        <span
+                          ><img
+                            src="../../../assets/img/famicons_card.svg"
+                            alt="gift"
+                            srcset=""
+                            style="height: 40px"
+                        /></span>
+                      </div>
+                    </div>
+                    <div class="col-10" style="text-align: start">
+                      <p class="title-rek">Mandiri</p>
+                      <p class="name-rek">a.n. Sari Dewi Lestari</p>
+                      <div class="row">
+                        <div class="col-auto">
+                          <p class="no-rek">1234567890</p>
+                        </div>
+                        <div class="col-auto">
+                          <div class="box-copy">
+                            <img
+                              src="../../../assets/img/boxicons_copy.svg"
+                              alt="copy"
+                              srcset=""
+                              style="height: 18px"
+                            />
+                            <span class="ps-2">Salin</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row home-address mb-5" style="justify-content: center">
+            <div class="col-auto">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row" style="justify-content: center">
+                    <div class="col-auto">
+                      <p class="title-address">Kirim Hadiah</p>
+                      <p class="alamat-lengkap">
+                        Jl. Raya Kebayoran No. 123, RT 05/RW 03 Kebayoran Baru, Jakarta Selatan
+                        12160
+                      </p>
+                      <p class="name-penerima">Ahmad Rizky Pratama</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

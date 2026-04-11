@@ -685,7 +685,43 @@ body {
 .gift .rek-satu .card,
 .gift .rek-dua .card {
   width: 440px;
-  height: 150px;
+  height: 130px;
+}
+
+.gift .title-rek {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.gift .name-rek {
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 0;
+}
+
+.gift .no-rek {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.gift .box-copy {
+  cursor: pointer;
+}
+.gift .home-address .card {
+  width: 440px;
+  height: 168px;
+}
+.gift .title-address {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.gift .alamat-lengkap {
+  width: 319px;
+}
+
+.gift .name-penerima {
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
 /* media query */
