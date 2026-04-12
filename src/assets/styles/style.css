@@ -507,12 +507,11 @@ body {
 
 .gallery .all-images {
   display: grid;
-  grid-template-columns: 448px 240px 240px;
+  grid-template-columns: 2fr 1fr 1fr;
   /* grid-template-rows: 220px 220px; */
   gap: 20px;
   grid-template-areas: 'big small1 small2' 'big small3 small4';
-  padding-left: 136px;
-  padding-right: 136px;
+  padding: 0.5%;
 }
 
 .gallery .all-images div {
@@ -520,11 +519,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 .gallery .all-images .box-satu {
   grid-area: big;
-  height: 474px;
-  width: 450px;
+  aspect-ratio: 1 / 1;
   background-image: url(../img/gallery/gambar-1.png);
   transition: all 0.3s ease;
 }
@@ -548,29 +547,25 @@ body {
 
 .gallery .all-images .box-dua {
   grid-area: small1;
-  height: 224px;
-  width: 240px;
+  aspect-ratio: 1 / 1;
   background-image: url(../img/gallery/gambar-2.png);
   transition: all 0.3s ease;
 }
 .gallery .all-images .box-tiga {
   grid-area: small2;
-  height: 224px;
-  width: 240px;
+  aspect-ratio: 1 / 1;
   background-image: url(../img/gallery/gambar-3.png);
   transition: all 0.3s ease;
 }
 .gallery .all-images .box-empat {
   grid-area: small3;
-  height: 224px;
-  width: 240px;
+  aspect-ratio: 1 / 1;
   background-image: url(../img/gallery/gambar-4.png);
   transition: all 0.3s ease;
 }
 .gallery .all-images .box-lima {
   grid-area: small4;
-  height: 224px;
-  width: 240px;
+  aspect-ratio: 1 / 1;
   background-image: url(../img/gallery/gambar-5.png);
   transition: all 0.3s ease;
 }
@@ -772,6 +767,23 @@ body {
     text-align: center;
     padding-left: 12px;
   }
+
+  .gallery .all-images {
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-areas: 'big big' 'small1 small2' 'small3 small4';
+    justify-items: center;
+  }
+  .gallery .all-images div {
+    height: 200px;
+    border-radius: 15px;
+  }
+  .gallery .all-images .box-satu {
+    aspect-ratio: 16 / 9;
+  }
+  .gallery .all-images .box-depan {
+    border-radius: 15px;
+  }
 }
 
 @media (max-width: 765px) {
@@ -816,6 +828,17 @@ body {
   }
   .timeline li .timeline-panel .timeline-body {
     margin-left: 0 !important;
+  }
+  .gallery .all-images {
+    grid-template-columns: 1fr;
+
+    grid-template-areas: 'big' 'small1' 'small2' 'small3' 'small4';
+    justify-items: center;
+    gap: 15px;
+  }
+  .gallery .all-images div {
+    aspect-ratio: 16 / 9;
+    border-radius: 15px;
   }
 }
 

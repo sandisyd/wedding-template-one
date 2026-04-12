@@ -27,7 +27,7 @@
               </svg>
             </div>
           </div>
-          <div class="all-images" style="justify-content: center; align-items: flex-start">
+          <div class="all-images mb-5" style="justify-content: center">
             <div class="box-satu"><div class="box-depan"></div></div>
             <div class="box-dua"><div class="box-depan"></div></div>
             <div class="box-tiga"><div class="box-depan"></div></div>
